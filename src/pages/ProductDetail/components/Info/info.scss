@@ -1,0 +1,133 @@
+.info {
+    width: 50%;
+    margin-left: 50px;
+    h2 {
+        margin-bottom: 16px;
+    }
+    .clothes__info {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #000;
+    }
+
+    .clothes__content {
+        .clothes__price {
+            display: flex;
+            justify-content: start;
+            margin-top: 12px;
+            p {
+                font-size: 24px;
+                margin-right: 10px;
+                font-weight: bold;
+            }
+
+            span {
+                font-size: 16px;
+                text-decoration: line-through;
+            }
+        }
+
+        .clothes__size {
+            margin-top: 35px;
+
+            .clothes__content__title {
+                margin-bottom: 10px;
+                font-size: 15px;
+                color: #000;
+                opacity: 0.7;
+            }
+
+            .clothes__size__option {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                span {
+                    width: 48px;
+                    height: 48px;
+                    border: 1px solid #ccc;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .clothes__count {
+            margin-top: 30px;
+            .clothes__count__option {
+                display: flex;
+                button,
+                p {
+                    width: 48px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: rgba(0, 0, 0, 0);
+                    border: 1px solid #ccc;
+                    cursor: pointer;
+                    color: #000;
+                }
+            }
+        }
+
+        .clothse__notice {
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            p {
+                display: block;
+                padding: 5px 0;
+                font-size: 14px;
+                color: #000;
+                font-weight: bold;
+                i {
+                    margin-right: 5px;
+                }
+                span {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .addcart__btn {
+            margin-top: 40px;
+            padding: 18px 30px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+        }
+        .addcart__btn:hover {
+            background-color: #ccc;
+            cursor: pointer;
+        }
+    }
+}
+
+.clothes__err {
+    margin-top: 10px;
+    color: red;
+    font-size: 15px;
+    i {
+        color: yellow;
+    }
+}
+
+@media only screen and (max-width: 739px) {
+    .info {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .info {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+}

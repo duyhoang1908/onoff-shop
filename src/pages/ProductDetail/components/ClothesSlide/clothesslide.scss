@@ -1,0 +1,81 @@
+.clothes__slide {
+    display: flex;
+    width: 50%;
+    .clothes__slide__list {
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+        .right__list__img {
+            width: 90px;
+            margin-bottom: 4px;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .clothes__slide__show {
+        flex: 1;
+        overflow: hidden;
+
+        .clothes__slide__show__box {
+            position: relative;
+            .clothes__slide__show__slider {
+                width: 100%;
+                display: flex;
+                transition: 0.5s all;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .slider__btn--next,
+            .slider__btn--prev {
+                position: absolute;
+                top: 50%;
+                padding: 50px 0px;
+                transform: translateY(-50%);
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0);
+                border: none;
+                z-index: 5;
+            }
+            .slider__btn--prev {
+                left: 0;
+            }
+            .slider__btn--next {
+                right: 0;
+            }
+
+            .slider__btn--next:hover i,
+            .slider__btn--prev:hover i {
+                color: #337ab7;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 739px) {
+    .clothes__slide {
+        width: 100%;
+        .clothes__slide__list {
+            display: none;
+        }
+        .clothes__slide__show {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .clothes__slide {
+        width: 100%;
+        .clothes__slide__list {
+            display: none;
+        }
+        .clothes__slide__show {
+            width: 100%;
+        }
+    }
+}

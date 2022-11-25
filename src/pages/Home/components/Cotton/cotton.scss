@@ -1,0 +1,85 @@
+//cotton------------------------------------
+.cotton {
+    padding: 0 20px;
+    text-align: center;
+    .cotton__title {
+        font-size: 48px;
+        margin: 30px 0;
+    }
+    .cotton__subtitle {
+        font-size: 24px;
+        margin: 0px auto 90px;
+    }
+
+    .cotton__list {
+        display: flex;
+        .cotton__item {
+            flex: 1;
+            .cotton__item__box {
+                position: relative;
+                padding: 20px;
+                img {
+                    max-width: 100%;
+                }
+                .cotton__item__box__text {
+                    position: absolute;
+                    padding: 30px 20px;
+                    text-align: left;
+                    bottom: 0;
+                    color: #fff;
+                    background: linear-gradient(
+                        rgba(120, 120, 120, 0),
+                        rgba(120, 120, 120, 0.5),
+                        rgba(120, 120, 120, 0.9)
+                    );
+                    h2 {
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .cotton__btn {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 20px;
+                justify-content: start;
+                margin-top: 20px;
+                button {
+                    user-select: none;
+                    text-transform: uppercase;
+                    min-width: 100px;
+                    margin-right: 20px;
+                    margin-bottom: 10px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    background-color: transparent;
+                    border: 1px solid #000;
+                    padding: 5px 10px;
+                    color: #000;
+                }
+                button:hover {
+                    background-color: #000;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cotton {
+        .cotton__list {
+            flex-direction: column;
+            .cotton__btn {
+                button {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+}

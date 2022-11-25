@@ -1,0 +1,86 @@
+.home {
+    //banner------------------------------------
+    .banner {
+        display: block;
+        width: 100%;
+        padding-top: 50%;
+        margin-top: 45px;
+        background: url('https://onoff-clone.netlify.app/static/media/banner.82165e9b.jpg') center center/ cover
+            no-repeat;
+    }
+
+    //cate------------------------------------
+
+    //product------------------------------------
+    .product {
+        padding: 50px 20px;
+        .product__title {
+            display: block;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+        .product__list {
+            display: flex;
+        }
+    }
+
+    //footer__banner------------------------------------
+    .footer__banner {
+        margin: 110px 0 25px 0;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    .banner {
+        margin-top: 60px !important;
+    }
+
+    .nav {
+        .nav__user {
+            display: none;
+        }
+    }
+
+    .home {
+        .product {
+            .product__list {
+                grid-template-columns: auto auto;
+                column-gap: 20px;
+                row-gap: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .home {
+        .product {
+            .product__list {
+                grid-template-columns: auto auto auto;
+                column-gap: 20px;
+                row-gap: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .banner {
+        margin-top: 60px !important;
+    }
+    .home {
+        .product {
+            .product__list {
+                grid-template-columns: auto;
+                column-gap: 20px;
+                row-gap: 20px;
+            }
+        }
+    }
+}

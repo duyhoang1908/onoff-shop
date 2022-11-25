@@ -1,0 +1,21 @@
+.clothes {
+    padding: 100px 20px 100px;
+    width: 100%;
+}
+
+.clothes__container {
+    margin-top: 40px;
+    display: flex;
+}
+
+@media only screen and (max-width: 739px) {
+    .clothes__container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .clothes__container {
+        flex-direction: column;
+    }
+}

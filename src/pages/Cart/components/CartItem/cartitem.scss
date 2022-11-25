@@ -1,0 +1,33 @@
+.cart__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    img {
+        width: 150px;
+    }
+
+    .item__info {
+        width: 40%;
+    }
+
+    .item__btn {
+        display: flex;
+        div {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #ccc;
+            cursor: pointer;
+            color: #000;
+        }
+    }
+
+    .item__price {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
